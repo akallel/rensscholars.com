@@ -34,32 +34,6 @@
 		  ga('create', 'UA-52486782-2', 'auto');
 		  ga('send', 'pageview');
 		</script>
-		<!-- make it only accessible for students -->
-		<script>
-			function passWord() {
-			var testV = 1;
-			var pass1 = prompt('Please Enter Your Password',' ');
-			while (testV < 3) {
-			if (!pass1)
-			history.go(-1);
-			if (pass1.toLowerCase() == "rens") {
-			alert('Welcome!');
-			window.open('studentProfiles.html');
-			break;
-			}
-			testV+=1;
-			var pass1 =
-			prompt('Access Denied - Password Incorrect, Please Try Again.','Password');
-			}
-			if (pass1.toLowerCase()!="password" & testV ==3)
-			history.go(-1);
-			return " ";
-			}
-			</SCRIPT>
-			<FORM>
-			<input type="button" value="Enter Protected Area" onClick="passWord()">
-			</FORM>
-		</script>
 	</head>
 	    <!-- slider-->
 	<body class="subpage">
